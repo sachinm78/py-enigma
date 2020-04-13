@@ -7,6 +7,11 @@ def enigma_light():
     print(keys)
     print(values)
 # create two dictionaries
+    dict_e = dict(zip(keys,values))
+    dict_d = dict(zip(values,keys)) 
+    # OR create 1 and then flip 
+    # dict_e = dict(zip(keys,values))
+    # dict_d = {value:key for key, value in dict_e.items()}
 # user input 'the message' and mode
 # run encode or decode
 # return result
